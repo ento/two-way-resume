@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="${FULL_NAME}">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="preload" href="./fonts/FiraGO-Regular.latin.woff2" as="font" crossorigin="anonymous"> -->
+  <link href="./build.css" rel="stylesheet">
+  <title>${FULL_NAME} — Resume</title>
+</head>
+
+<body>
+  <main class="font-firago hyphens-manual">
+
+    <!-- Page -->
+    <div class="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white">
+
+      <!-- Name -->
+      <header class="flex justify-between items-start mb-8 md:mb-11">
+        <section class="flex items-center">
+          <div class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3"
+               style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
+            <div class="initial text-center" style="padding-bottom: 0.1875rem; /*3px*/">${FIRST_NAME_INITIAL}</div>
+            <div class="text-center initial">${LAST_NAME_INITIAL}</div>
+          </div>
+          <h1 class="text-2xl font-semibold text-gray-750 pb-px">
+            ${FULL_NAME}
+          </h1>
+        </section>
+
+        <section class="break-inside-avoid">
+          <ul class="list-inside pr-7 text-sm text-right">
+            <li class="mt-1.5 leading-normal text-gray-700">
+              <a href="//www.linkedin.com/in/${LINKEDIN_NAME}/" class="group" target="_blank">
+                linkedin.com/in/${LINKEDIN_NAME}
+                <span class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+              </a>
+            </li>
+            <li class="mt-1.5 leading-normal text-gray-700">
+              <a href="${WEBSITE_URL}" class="group" target="_blank">
+                ${WEBSITE_TITLE}
+                <span class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+              </a>
+            </li>
+            <li class="mt-1.5 leading-normal text-gray-700">
+              <a href="//github.com/${GITHUB_NAME}" class="group" target="_blank">
+                github.com/${GITHUB_NAME}
+                <span class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+              </a>
+            </li>
+            <li class="mt-1.5 leading-normal text-gray-700">
+              ${LOCATION}
+            </li>
+            <li class="mt-1.5 leading-normal text-gray-700">
+              ${EMAIL}
+            </li>
+          </ul>
+        </section>
+      </header>
+      <!-- end Name -->
+
+      <!-- Column -->
+      <div class="md:h-letter-col-full print:h-letter-col-full">
+
+        <!-- About -->
+        <section class="section">
+          <!-- Main content -->
+          <section class="section-main">
+            <header class="flex items-baseline">
+              <h2 class="section-title">
+                High-level overview
+              </h2>
+              <div class="section-title-connector"></div>
+            </header>
+
+            <section class="subsection">
+              <header>
+                <h3 class="subsection-title">
+                  Professionally good at...
+                </h3>
+              </header>
+              <p class="text">
+                <ul class="list">
+                  <li class="item"><span class="bullet">›</span>
+                    Creating <em class="not-italic">systems and structures</em>; be it software, work process, or framework of thought
+                  </li>
+                  <li class="item"><span class="bullet">›</span>
+                    Thinking from <em class="not-italic">first principles</em>, asking penetrating questions; this might not be obvious as my voice is small. "<i>Everyone's doing it</i> is <em>not</em> enough reason" is my shtick
+                  </li>
+                  <li class="item"><span class="bullet">›</span>
+                    <em class="not-italic">Going deep</em> and staying with a problem until it's solved; read source code, trace system calls, and inspect packets
+                  </li>
+                  <li class="item"><span class="bullet">›</span>
+                    <em class="not-italic">Autodidact</em>; quickly get productive in a new tech stack as if I have prior experience
+                  </li>
+                  <li class="item"><span class="bullet">›</span>
+                    <em class="not-italic">Written communication</em>; excel at short-term and long-term asynchronous communication from answering questions to maintaining wikis and documentation
+                  </li>
+                </ul>
+              </p>
+            </section>
+
+            <section class="subsection">
+              <header>
+                <h3 class="subsection-title">
+                  Professionally <em>not</em> good at...
+                </h3>
+              </header>
+              <p class="text">
+                <ul class="list">
+                  <li class="item"><span class="bullet">›</span>
+                    Speaking in a 'normal' cadence; I need time to think before responding and this may be a disadvantage when it comes to client-facing work
+                  </li>
+                  <li class="item"><span class="bullet">›</span>
+                    Blogging or giving a conference talk hasn't been something I do proactively; recently started writing in a private space to build my muscle
+                  </li>
+                </ul>
+              </p>
+            </section>
+          </section>
+          <aside class="col-span-1">
+            <header>
+              <h2 class="section-title">
+                What I'm looking for next
+              </h2>
+            </header>
+            <section class="aside-section">
+              <ul class="aside-list">
+                <li class="item"><span class="bullet">›</span>
+                  Full-time or contract
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Individual contributor role
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Remote preferred, open to relocation
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Company size: smaller preferred, open to any as long as culture is flexible and open
+                </li>
+              </ul>
+              <p class="aside-text text-xs mt-4 p-4 border border-dashed">
+                <i>Why're your weaknesses in your resume</i> you ask?
+                It's a
+                <a href="https://observablehq.com/ento/two-way-resume">
+                  two-way resume format
+                  <span class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+                </a>
+                I'm experimenting with to
+                save us all time by frontloading all important info.
+              </p>
+            </section>
+          </aside>
+        </section>
+        <!-- end About -->
+
+        <!-- Skills -->
+        <section class="section">
+          <!-- Main content -->
+          <section class="section-main">
+            <header class="flex items-baseline">
+              <h2 class="section-title">
+                Skills
+              </h2>
+              <div class="section-title-connector"></div>
+            </header>
+
+            <section class="subsection">
+              <header>
+                <h3 class="subsection-title">
+                  Site Reliability Engineering
+                  <span class="subsection-title-aside">(2 years)</span>
+                </h3>
+              </header>
+              <p class="text">
+              </p>
+              <div class="my-3 last:pb-1.5">
+                <ul class="tag-list">
+                  <li class="tag-label">Proficient:</li>
+                  <li class="tag">
+                    Python
+                  </li>
+                  <li class="tag">
+                    Terraform
+                  </li>
+                  <li class="tag">
+                    Jenkins
+                  </li>
+                  <li class="tag">
+                    AWS
+                  </li>
+                  <li class="tag">
+                    NewRelic
+                  </li>
+                  <li class="tag">
+                    Datadog
+                  </li>
+                  <li class="tag">
+                    Nix
+                  </li>
+                  <li class="tag-label">Intermediate:</li>
+                  <li class="tag">
+                    Kubernetes
+                  </li>
+                  <li class="tag">
+                    Docker
+                  </li>
+                  <li class="tag-label">Beginner:</li>
+                  <li class="tag">
+                    Go
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="subsection">
+              <header>
+                <h3 class="subsection-title">
+                  Full-stack Web Development
+                  <span class="subsection-title-aside">(10+ years)</span>
+                </h3>
+              </header>
+              <div class="my-3 last:pb-1.5">
+                <ul class="tag-list">
+                  <li class="tag-label">Proficient:</li>
+                  <li class="tag">
+                    Python
+                  </li>
+                  <li class="tag">
+                    Ruby
+                  </li>
+                  <li class="tag">
+                    MySQL
+                  </li>
+                  <li class="tag-label">Intermediate:</li>
+                  <li class="tag">
+                    Haskell
+                  </li>
+                  <li class="tag">
+                    Elm
+                  </li>
+                  <li class="tag">
+                    Redis
+                  </li>
+                  <li class="tag-label">Rusty:</li>
+                  <li class="tag">
+                    React
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="subsection">
+              <header>
+                <h3 class="subsection-title">
+                  Effective Communication
+                  <span class="subsection-title-aside">(30+ years)</span>
+                </h3>
+              </header>
+              <div class="my-3 last:pb-1.5">
+                <ul class="tag-list">
+                  <li class="tag">
+                    Nonviolent communication
+                  </li>
+                  <li class="tag">
+                    Perspective taking
+                  </li>
+                  <li class="tag">
+                    Active listening
+                  </li>
+                  <li class="tag">
+                    Compassion for all
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </section>
+          <aside class="col-span-1">
+            <header>
+              <h2 class="section-title">
+                What I'm looking for next
+              </h2>
+            </header>
+            <ul class="aside-list">
+              <li class="item"><span class="bullet">›</span>
+                Primarily SRE/DevOps or Full-stack/Backend. Happy to be anywhere in the stack
+              </li>
+              <li class="item"><span class="bullet">›</span>
+                I'd love to work with statically-typed functional langauges if given the choice. However, choice of technology comes secondary to what the mission is
+              </li>
+            </ul>
+          </aside>
+        </section>
+        <!-- end Skills -->
+
+        <!-- Experience -->
+        <section class="section">
+          <section class="section-main">
+            <header class="flex items-baseline">
+              <h2 class="section-title">
+                Experience
+              </h2>
+            </header>
+
+            <!-- Main content and aside -->
+            <section class="subsection">
+              <header>
+                <h3 class="subsection-title">
+                  SRE & Full-stack Engineer @ ${COMPANY_1}
+                </h3>
+                <p class="subsection-subtitle">
+                  July 2015 - July 2020 | ${COMPANY_1_LOCATION} | Laid off due to the pandemic
+                </p>
+              </header>
+              <p class="text">
+                ${COMPANY_1_DESC}
+              </p>
+              <p class="text mt-3.2">
+                Highlights from the last two years as an <em class="not-italic">SRE:</em>
+                <ul class="list ml-3">
+                  <li class="item"><span class="bullet">›</span>
+                    Co-authored internal guideline for teams to build reliable and secure services
+                  </li>
+                  <li class="item"><span class="bullet">›</span>
+                    Migrated two internal services to Kubernetes, laying the groundwork for the rest of the infrastructure
+                  </li>
+                </ul>
+              </p>
+              <p class="text mt-3.2">
+                Continuously improved <em class="not-italic">how we work</em>:
+                <ul class="list ml-3">
+                  <li class="item"><span class="bullet">›</span>
+                    Introduced internal tools and practices that support asynchronous team communication
+                  </li>
+                </ul>
+              </p>
+            </section>
+
+            <section class="subsection">
+              <header>
+                <h3 class="subsection-title">
+                  Full-Stack Web & Mobile Engineer @ ${COMPANY_2}
+                </h3>
+                <p class="subsection-subtitle">
+                  2010 - 2015 | ${COMPANY_2_LOCATION}
+                </p>
+              </header>
+              <p class="text">
+                Taken on non-trivial app requirements and led each of them to its completion.
+                <ul class="list ml-3">
+                  <li class="item"><span class="bullet">›</span>
+                    Developed OLAP system for cross-tabulating and segmenting 60M data points from annual nation-wide consumer surveys
+                  </li>
+                  <li class="item"><span class="bullet">›</span>
+                    Developed market research community platform with natural language &amp; social graph analytics
+                  </li>
+                  <li class="item"><span class="bullet">›</span>
+                    Developed conference app with indoor location tracking based on Bluetooth beacons
+                  </li>
+                </ul>
+              </p>
+            </section>
+
+            <section class="subsection">
+              <header>
+                <h3 class="subsection-title">
+                  Junior Software Engineer @ ${COMPANY_3}
+                </h3>
+                <p class="subsection-subtitle">
+                  2006 - 2010 | ${COMPANY_3_LOCATION}
+                </p>
+              </header>
+              <p class="text">
+                ${COMPANY_3_DESC}
+              </p>
+            </section>
+          </section>
+          <aside class="col-span-1">
+            <header>
+              <h2 class="section-title">
+                What I'm looking for next
+              </h2>
+            </header>
+            <section class="aside-section">
+              <p class="aside-text">
+                <em class="not-italic">Mission</em> is the most important factor. Examples I resonate with:
+              </p>
+              <ul class="aside-list">
+                <li class="item"><span class="bullet">›</span>
+                  Agriculture & forestry / Finance: curb global warming and societal collapse
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Autism and mental health: support those in need of guidance
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Education: cultivate critical thinking and self-awareness
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Personal development: happier relationships at work and in personal life
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Recruiting: high-fidelity matching backed by data to shorten the process
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Spirituality and mindfulness: support teachers and students in any way
+                </li>
+              </ul>
+            </section>
+            <section class="aside-section">
+              <p class="aside-text">
+                Alignment of <em class="not-italic">core values</em>:
+              </p>
+              <ul class="aside-list">
+                <li class="item"><span class="bullet">›</span>
+                  Autonomy
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Continuous feedback
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Deep work, light meetings
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Open to diverse cultures
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Flexibility
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Work/life balance
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </section>
+        <!-- end Experience -->
+
+        <!-- Education -->
+        <section class="section">
+          <!-- Main content -->
+          <section class="section-main">
+            <header class="flex items-baseline">
+              <h2 class="section-title">
+                Education
+              </h2>
+              <div class="section-title-connector"></div>
+            </header>
+
+            <section class="subsection">
+              <header>
+                <h3 class="subsection-title">
+                  ${EDUCATION_TITLE}
+                </h3>
+                <p class="text">
+                  ${EDUCATION_DESC}
+                </p>
+              </header>
+            </section>
+          </section>
+          <aside class="col-span-1">
+            <header>
+              <h2 class="section-title">
+                What I'm learning
+              </h2>
+            </header>
+            <section class="subsection">
+              <ul class="aside-list">
+                <li class="item"><span class="bullet">›</span>
+                  Systems thinking
+                </li>
+                <li class="item"><span class="bullet">›</span>
+                  Street Epistemology
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </section>
+        <!-- end Education -->
+
+        <footer class="mt-8">
+          <hr>
+          <p class="text-sm text-gray-600 text-right py-4">
+            Latest version of this resume:
+            <a href="${RESUME_URL}">${RESUME_URL_TITLE}</a><span class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+          </p>
+        </footer>
+      </div>
+      <!-- end Column -->
+    </div>
+    <!-- end Page -->
+
+  </main>
+
+</body>
+
+</html>

@@ -4,4 +4,5 @@
 /node_modules/
 package-lock.json
 /docs/build.css
+/docs/index.html
 /tmp/

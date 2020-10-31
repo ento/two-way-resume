@@ -13,8 +13,8 @@
   "license": "NonCommercial-ShareAlike 1.0 Generic",
   "author": "WebPraktikos <hi@webpraktikos.com>",
   "scripts": {
-    "serve": "concurrently \"postcss ./tailwind.css -o docs/build.css --watch\"  \"live-server ./docs \"",
-    "build": "cross-env NODE_ENV=build postcss ./tailwind.css -o ./docs/build.css"
+    "serve": "concurrently \"onchange index.html -- envsub index.html docs/index.html\"  \"postcss ./tailwind.css -o docs/build.css --watch\"  \"live-server ./docs \"",
+    "build": "concurrently \"envsub index.html docs/index.html\"  \"cross-env NODE_ENV=build postcss ./tailwind.css -o ./docs/build.css\""
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",
@@ -22,7 +22,10 @@
     "concurrently": "^5.1.0",
     "cross-env": "^7.0.0",
     "cssnano": "^4.1.10",
+    "envsub": "^4.0.7",
+    "netlify-cli": "^2.67.0",
     "live-server": "^1.2.1",
+    "onchange": "^7.1.0",
     "postcss-cli": "^7.0.0",
     "postcss-import": "^12.0.1",
     "tailwindcss": "^1.2.0"
