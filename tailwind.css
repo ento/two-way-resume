@@ -14,7 +14,6 @@
 @layer components {
   .section {
     @apply mt-6;
-    @apply grid grid-cols-4;
   }
 
   .section:first {
@@ -22,7 +21,17 @@
   }
 
   .section-main {
-    @apply col-span-3 pr-4;
+    @apply pr-4;
+  }
+
+  @screen md {
+    .section {
+      @apply grid grid-cols-4;
+    }
+
+    .section-main {
+      @apply col-span-3;
+    }
   }
 
   .section-title {
