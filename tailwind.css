@@ -34,6 +34,16 @@
     }
   }
 
+  @screen print {
+    .section {
+      @apply grid grid-cols-4;
+    }
+
+    .section-main {
+      @apply col-span-3;
+    }
+  }
+
   .section-title {
     @apply mb-4 font-bold tracking-widest text-sm2 text-gray-550 uppercase break-inside-avoid;
   }
