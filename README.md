@@ -36,7 +36,7 @@ Differences from universal-resume
 
 `index.html` is the main content file, not `docs/index.html`.
 
-The build step uses [`envsub`](https://www.npmjs.com/package/envsub) to substitue `${ENVVARS}` with the values of the corresponding environment variables.
+For a bit of privacy via obscurity, the build step uses [`envsub`](https://www.npmjs.com/package/envsub) to substitue `${ENVVARS}` with the values of the corresponding environment variables.
 
 One way to set up environment variables to be used during the build process is through Netlify: `netlify.toml` includes minimum config for connecting the repo to a Netlify site. Environment variables can be configured in the site settings and running `netlify build` locally will feed them to `envsub`.
 
